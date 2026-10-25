@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="773.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.universitylibrary.LenController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="41.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="LIBRARY ID" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="BOOK ID" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="158.0" layoutY="41.0" prefHeight="62.0" prefWidth="546.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="fieldlibraryID" />
+            <TextField fx:id="fieldBookID" prefHeight="30.0" prefWidth="461.0" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnDelete" layoutX="347.0" layoutY="119.0" mnemonicParsing="false" onAction="#lendBooks" text="LEND" />
+      <Button fx:id="btnSave" layoutX="608.0" layoutY="119.0" mnemonicParsing="false" onAction="#returnBook" text="RETURN" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEARCH" />
+      <TextField fx:id="fieldSearch" layoutX="158.0" layoutY="166.0" prefHeight="30.0" prefWidth="546.0" />
+      <TableView fx:id="tableView" layoutX="158.0" layoutY="275.0" onMouseClicked="#mouseClicked" prefHeight="200.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="colBName" prefWidth="151.20001220703125" text="Book name" />
+          <TableColumn fx:id="colloanedbookID" prefWidth="132.79998779296875" text="Book ID" />
+            <TableColumn fx:id="colstudentID" prefWidth="99.20004272460938" text="Student ID" />
+            <TableColumn fx:id="collibraryID" prefWidth="158.39996337890625" text="Library ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="119.0" mnemonicParsing="false" onAction="#tomainMenu" text="Back to menu" />
+   </children>
+</AnchorPane>

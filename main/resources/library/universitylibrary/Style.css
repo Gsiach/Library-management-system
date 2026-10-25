@@ -1,0 +1,137 @@
+/* Root (Background) */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #1f1f1f, #2b2b2b);
+    -fx-padding: 10px;
+}
+
+/* Label (Title) Styling */
+.label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 22px;
+    -fx-font-weight: 500;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4), 2, 0.2, 1, 1);
+}
+
+/* Sleek Button Styling */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #3a3c3f, #2e3032);
+    -fx-text-fill: #e0e0e0;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #5c5f61;
+    -fx-border-width: 1.5px;
+    -fx-padding: 6 20;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4), 4, 0.3, 1, 1);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #4a4d50, #3b3d3f);
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6), 6, 0.3, 2, 2);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1d1f20, #141516);
+    -fx-effect: none;
+}
+
+.button:focused {
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7), 8, 0.4, 2, 2);
+}
+
+/* Text (General) */
+.text {
+    -fx-fill: #e0e0e0; /* White text color */
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* TextField Styling */
+.text-field {
+    -fx-background-color: #3a3c3f;
+    -fx-text-fill: #e0e0e0;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #5c5f61;
+    -fx-border-width: 1.5px;
+    -fx-font-size: 14px;
+    -fx-padding: 3 5;
+}
+
+.text-field:hover {
+    -fx-background-color: #4a4d50;
+}
+
+.text-field:focused {
+    -fx-border-color: #2196F3;
+    -fx-border-width: 5px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6), 6, 0.3, 2, 2);
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: #2e3032;
+    -fx-border-color: #5c5f61;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5), 4, 0.3, 1, 1);
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #3c3f41, #2e3032);
+    -fx-border-color: #5c5f61;
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #3a3c3f;
+    -fx-text-fill: #e0e0e0;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: #ffffff;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #4a4d50;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 13px;
+    -fx-padding: 6px;
+}
+/* ScrollBar Styling */
+.scroll-bar {
+    -fx-background-color: #2e3032;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #4a4d50;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #5c5f61;
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #3b3d3f;
+}
+
+/* Styling the Track */
+.scroll-bar .track {
+    -fx-background-color: #1f1f1f;
+}
